@@ -1,0 +1,67 @@
+body {}
+
+.carousel {
+  width: 100%;
+  height: auto;
+  position: relative;
+  border: 5px solid white;
+}
+
+.overlay {
+  position: absolute;
+  top: -7%;
+  left: 0px;
+  width: 100%;
+  height: auto;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+}
+
+/*Description Box. Padding and box design is in here. Feel free to change for better style.*/
+.desc {
+  background-color: rgba(126, 133, 134, .85);
+  width: 95%;
+  padding: 20px 50px;
+  border: 5px solid black;
+  margin: auto;
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/*Add the remaining content boxes here.*/
+.boxes {
+  font-size:1.5em;
+  font-weight: 600;
+}
+
+/*Background Image. Don't mess with.*/
+.backgroundImage {
+  background-image: url("images/scuba.jpg");
+  background-color: rgb(28, 173, 189);
+  height: 100%;
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+
+@media screen and (max-width: 1100px) {
+  .overlay {
+    top: -5%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .overlay {
+    top: -3%;
+  }
+
+  .boxes {
+    font-size: 1em;
+  }
+}
