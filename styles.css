@@ -19,7 +19,7 @@ body {}
 
 /*Description Box. Padding and box design is in here. Feel free to change for better style.*/
 .desc {
-  background-color: rgba(126, 133, 134, .85);
+  background-color: rgba(126, 133, 134, .5);
   width: 95%;
   padding: 20px 50px;
   border: 5px solid black;
@@ -31,13 +31,17 @@ body {}
 }
 
 /*add the remaining content boxes here.*/
-.dropdown {
+
+.btn-group {
   float:right;
   padding-left:10px;
 }
+.btn-group1 {
+  float:left;
+  padding-right:10px;
+}
 .history {
-  background-color: rgba(126, 133, 134, .85);
-  width: 95%;
+  background-color: rgba(126, 133, 134, .65);
   padding: 20px 50px;
   border: 5px solid black;
   margin: auto;
@@ -45,6 +49,63 @@ body {}
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
+  font-size:.6em;
+  width:60%;
+
+}
+
+.wildlife {
+  background-color: rgba(126, 133, 134, .65);
+  padding: 20px 50px;
+  border: 5px solid black;
+  margin: auto;
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size:.6em;
+  width:60%;
+}
+
+.marine{
+  background-color: rgba(126, 133, 134, .65);
+  padding: 20px 50px;
+  border: 5px solid black;
+  margin: auto;
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size:.6em;
+  width:60%;
+}
+.views {
+  background-color: rgba(126, 133, 134, .65);
+  padding: 20px 50px;
+  border: 5px solid black;
+  margin: auto;
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size:.6em;
+  width:95%;
+}
+.beachpics {
+  padding:15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  text-decoration: none;
+}
+li, a {
+color:navy;
+}
+.secfooter {
+  text-align:right;
+  color:navy;
 }
 .boxes {
   font-size:1.5em;
@@ -69,11 +130,23 @@ body {}
   .overlay {
     top: -5%;
   }
+  img {
+    width:200px;
+  }
+  .beachpics{
+    flex-wrap:wrap;
+  }
 }
 
 @media screen and (max-width: 850px) {
   .overlay {
     top: -3%;
+  }
+  img {
+    width:100px;
+  }
+  .beachpics{
+    flex-wrap:wrap;
   }
 
   .boxes {
