@@ -36,10 +36,12 @@ body {}
   float:right;
   padding-left:10px;
 }
+
 .btn-group1 {
   float:left;
   padding-right:10px;
 }
+
 .history {
   background-color: rgba(126, 133, 134, .65);
   padding: 20px 50px;
@@ -51,7 +53,6 @@ body {}
   text-align: center;
   font-size:.6em;
   width:60%;
-
 }
 
 .wildlife {
@@ -79,6 +80,7 @@ body {}
   font-size:.6em;
   width:60%;
 }
+
 .views {
   background-color: rgba(126, 133, 134, .65);
   padding: 20px 50px;
@@ -91,22 +93,32 @@ body {}
   font-size:.6em;
   width:95%;
 }
+
 .beachpics {
   padding:15px;
   display: flex;
+  flex-wrap:wrap;
   justify-content: space-between;
+}
+
+.beachpis, img {
+  padding: 10px;
+  max-height:225px;
 }
 
 ul {
   text-decoration: none;
 }
+
 li, a {
 color:navy;
 }
+
 .secfooter {
   text-align:right;
   color:navy;
 }
+
 .boxes {
   font-size:1.5em;
   font-weight: 600;
@@ -130,9 +142,11 @@ color:navy;
   .overlay {
     top: -5%;
   }
+
   img {
     width:200px;
   }
+
   .beachpics{
     flex-wrap:wrap;
   }
@@ -142,9 +156,11 @@ color:navy;
   .overlay {
     top: -3%;
   }
+
   img {
     width:100px;
   }
+
   .beachpics{
     flex-wrap:wrap;
   }
