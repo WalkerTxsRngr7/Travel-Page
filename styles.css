@@ -5,11 +5,12 @@ body {}
   height: auto;
   position: relative;
   border: 5px solid white;
+  border-top: 0px;
 }
 
 .overlay {
   position: absolute;
-  top: -7%;
+  top: 0px;
   left: 0px;
   width: 100%;
   height: auto;
@@ -31,7 +32,10 @@ body {}
 }
 
 /*add the remaining content boxes here.*/
-
+.btn {
+  border: 3px solid black;
+  border-radius: 15px;
+}
 .btn-group {
   float:right;
   padding-left:10px;
@@ -40,6 +44,11 @@ body {}
 .btn-group1 {
   float:left;
   padding-right:10px;
+}
+.dropdown-menu {
+  background-color: rgba(47, 127, 142, 0.7);
+  border: 3px solid rgb(26, 89, 173);
+  border-radius: 10px;
 }
 
 .history {
@@ -79,6 +88,7 @@ body {}
   text-align: center;
   font-size:.6em;
   width:60%;
+
 }
 
 .views {
@@ -92,18 +102,27 @@ body {}
   text-align: center;
   font-size:.6em;
   width:95%;
+
 }
 
 .beachpics {
   padding:15px;
   display: flex;
   flex-wrap:wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: space-around;
 }
 
 .beachpics img {
   padding: 10px;
   max-height:225px;
+  width:auto;
+}
+.dropdown-item:hover {
+  background-color: rgb(29, 94, 106);
+}
+.dropdown-item img {
+  width:auto;
 }
 
 ul {
@@ -123,6 +142,20 @@ color:navy;
   font-size:1.5em;
   font-weight: 600;
 }
+h2 {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 800;
+  font-size: 3em;
+}
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 900;
+  font-size: 4em;
+}
+p, li {
+  font-family: 'Acme', sans-serif;
+  font-size: 1.3em;
+}
 
 /*Background Image. Don't mess with.*/
 .backgroundImage {
@@ -137,12 +170,13 @@ color:navy;
   padding: 0px;
   margin: 0px;
 }
-
+.footer {
+  color:white;
+  text-align: right;
+  padding-right:50px;
+  text-shadow: 5px 5px 5px black;
+}
 @media screen and (max-width: 1100px) {
-  .overlay {
-    top: -5%;
-  }
-
   img {
     width:200px;
   }
@@ -153,10 +187,6 @@ color:navy;
 }
 
 @media screen and (max-width: 850px) {
-  .overlay {
-    top: -3%;
-  }
-
   img {
     width:100px;
   }
